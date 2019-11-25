@@ -25,10 +25,32 @@ export class CartComponent implements OnInit {
 
   }
   getcartLength() {
-    this.sharedService.getCartLength();
+   return this.sharedService.getCartLength();
   }
   updateCartItem(data) {
     this.sharedService.updateCartItem(data);
+  }
+  handleOptionChange(event) {
+    console.log('option value', event.target.value);
+    const value = event.target.value;
+    this.sortShoppingItems(value);
+  }
+  sortShoppingItems(value) {
+    if (value.includes('asc')) {
+      this.cartData.sort((a, b) =>  {
+        if (a.name < b.name) { return -1; }
+        if (a.name > b.name) { return 1; }
+        return 0;
+      });
+    } else if (value.includes('categ')){
+      this.cartData.sort((a, b) =>  {
+        if (a.category < b.category) { return -1; }
+        if (a.category > b.category) { return 1; }
+        return 0;
+      });
+    }
+    console.log(' sortShoppingItems data', this.cartData);
+
   }
 
 }

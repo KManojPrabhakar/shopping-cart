@@ -9,7 +9,7 @@ export class SharedService {
   constructor() {
     this.shoppingItems = [
       {name: 'Honor6x', category: 'Mobile', quantity: 4 , id:  1},
-      {name: ' Nokia', category: 'Mobile', quantity: 12 , id: 2},
+      {name: 'Nokia', category: 'Mobile', quantity: 12 , id: 2},
       {name: 'Real me 5', category: 'Mobile', quantity: 4, id: 3 },
       {name: 'Mi 7', category: 'Mobile', quantity: 4, id: 4 },
       {name: 'Realme  7', category: 'Mobile', quantity: 4, id: 5 },
@@ -18,8 +18,8 @@ export class SharedService {
       {name: 'One plus 7', category: 'Mobile', quantity: 4, id: 8 },
       {name: 'Iphone 7', category: 'Mobile', quantity: 4, id: 9 },
       {name: 'Honor 7', category: 'Mobile', quantity: 4, id: 10 },
-      {name: 'Honor 7', category: 'Mobile', quantity: 4, id: 11},
-      {name: 'Honor 7', category: 'Mobile', quantity: 4, id: 12},
+      {name: 'Dell', category: 'Laptop', quantity: 4, id: 11},
+      {name: 'Hp', category: 'Computer', quantity: 4, id: 12},
       {name: 'Honor 7', category: 'Mobile', quantity: 4, id: 13},
       {name: 'Honor 7', category: 'Mobile', quantity: 4, id: 14},
       {name: 'Honor 7', category: 'Mobile', quantity: 4, id: 15},

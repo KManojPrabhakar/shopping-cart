@@ -28,19 +28,19 @@ export class HomeComponent implements OnInit {
   handleOptionChange(event) {
     console.log('option value', event.target.value);
     const value = event.target.value;
-    this.sortBooksData(value);
+    this.sortShoppingItems(value);
   }
-  sortBooksData(value) {
+  sortShoppingItems(value) {
     if (value.includes('asc')) {
       this.shoppingItems.sort((a, b) =>  {
         if (a.name < b.name) { return -1; }
         if (a.name > b.name) { return 1; }
         return 0;
       });
-    } else {
+    } else if (value.includes('categ')){
       this.shoppingItems.sort((a, b) =>  {
-        if (a.name < b.name) { return 1; }
-        if (a.name > b.name) { return -1; }
+        if (a.category < b.category) { return -1; }
+        if (a.category > b.category) { return 1; }
         return 0;
       });
     }

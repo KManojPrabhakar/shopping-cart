@@ -1,4 +1,12 @@
 <div class="cart">
+		<div *ngIf="getcartLength()">
+				<select class="u_custom_select" (change)="handleOptionChange($event)">
+					<option>sort by</option>
+					<option value="asc">alphabetically(name)</option>
+					<option value="category">Category</option>
+
+				</select>
+			</div>
 	<div class="container" *ngIf="cartData">
 
 		<ng-container *ngFor="let cartItem of cartData; index as i; trackBy: trackByBooksIsbn">

@@ -1,0 +1,17 @@
+.button {
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: black;
+  outline: 0;
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: white;
+  cursor: pointer;
+}

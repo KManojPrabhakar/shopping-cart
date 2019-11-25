@@ -1,0 +1,16 @@
+.card-main {
+  width: 33.33%;
+}
+.card {
+  margin: 1rem;
+}
+.card-body {
+  border: 1px solid grey;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.u_custom_input {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}

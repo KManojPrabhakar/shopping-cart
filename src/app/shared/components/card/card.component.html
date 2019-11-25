@@ -1,0 +1,17 @@
+  <div class="card" *ngIf="card">
+    <div class="card-body">
+      <h5 class="card-title">Name: {{card.name}}</h5>
+      <p class="card-text">Category: {{card.category}}</p>
+      <p class="card-text">Available quantity: {{card.quantity}}</p>
+      <input *ngIf="showInputQuantity" [(ngModel)]="selectedQuantity"  class="u_custom_input u_margin_top_20" type="text" (keypress)="numberOnly($event)"
+      autocomplete="off" placeholder="No of quantity" />      
+      <div *ngIf="showInputQuantity">
+        <app-button [buttonName]="'update Item'" (emitButtonAction)="handleUpdateCartItem(card)"></app-button>
+
+      </div>
+
+      <app-button [buttonName]="buttonName" (emitButtonAction)="handleButtonAction(card)"></app-button>
+
+    </div>
+    
+  </div>

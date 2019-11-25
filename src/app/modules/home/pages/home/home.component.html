@@ -1,0 +1,16 @@
+<div class="home">
+		<div class="">
+				<select (change)="handleOptionChange($event)">
+					<option>sort by</option>
+					<option value="asc">alphabetically</option>
+				</select>
+			</div>
+  <div class="container" *ngIf="shoppingItems">
+		
+		<div class="card-main  col-xs-12 margin-bottom-20"  *ngFor="let item of shoppingItems; index as i; trackBy: trackByItemId">
+			<div class="card border border-danger"  >
+				<app-card [card]="item" [buttonName]="item.isItemsAddedToCart ? 'Remove Item':'Add to cart'" (emitButtonAction)="addToCart($event)"></app-card>
+			</div>
+		</div>
+	</div>
+</div>

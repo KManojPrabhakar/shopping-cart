@@ -1,0 +1,11 @@
+<header class="header"> 
+  <div class="u_cursor_pointer" routerLink="/">
+    Home
+  </div>
+  <div class="u_cursor_pointer" routerLink="/cart">
+    <p class="u_position_relative">Cart</p>
+    <span class="cart-badge" *ngIf="getcartLength()">{{getcartLength()}}</span>
+
+  </div>
+
+</header>

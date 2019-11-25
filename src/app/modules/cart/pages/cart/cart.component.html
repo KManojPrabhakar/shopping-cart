@@ -1,0 +1,21 @@
+<div class="cart">
+	<div class="container" *ngIf="cartData">
+
+		<ng-container *ngFor="let cartItem of cartData; index as i; trackBy: trackByBooksIsbn">
+			<div class="card-main  col-xs-12 margin-bottom-20" *ngIf="cartItem.isItemsAddedToCart">
+				<div class="card border border-danger">
+					<app-card [showInputQuantity]="showInputQuantity" [card]="cartItem"
+						[buttonName]="cartItem.isItemsAddedToCart ? 'Remove Item':'Add to cart'"
+						(emitButtonAction)="removeItem($event)" (emitUpdateCartItem)="updateCartItem($event)"></app-card>
+
+				</div>
+			</div>
+		</ng-container>
+
+	</div>
+	<div class="cart-placeholder" *ngIf="!getcartLength()">
+			<p class="text">It seems you are not added any items</p>
+			<a class="text" routerLink="/">Home</a>
+	</div>
+
+</div>

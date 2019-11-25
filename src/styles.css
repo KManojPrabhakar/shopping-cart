@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1 rem = 10px; 10px/16px = 62.5% */
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-main {
+  width: 33.33%;
+}
+.card {
+  margin: 1rem;
+}
+.card-body {
+  border: 1px solid grey;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.card-title {
+  font-size: 1.2rem;
+}
+.u_cursor_pointer {
+  cursor: pointer;
+}
+.u_position_relative {
+  position: relative;
+}

@@ -1,0 +1,23 @@
+.header {
+  font-size: 1.6rem;
+  background: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.cart-badge {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.6rem;
+  border-radius: 50%;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #ff6161;
+  border: solid 1px #fff;
+  font-weight: 400;
+  color: #f0f0f0;
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  text-align: center;
+}

@@ -55,13 +55,6 @@ export class SharedService {
   getShoppingItems() {
     return this.shoppingItems;
   }
-  setCartItems(data) {
-    sessionStorage.setItem('cartsData', JSON.stringify(data));
-  }
-  getCartItems() {
-    return sessionStorage.getItem('cartsData');
-
-  }
   addToCart(data) {
     console.log(' addToCart data', data);
     const findIndex = this.shoppingItems.findIndex((shoppingItem) => shoppingItem.id === data.id);

@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { CardComponent } from './components/card/card.component';
 import { ButtonComponent } from './components/button/button.component';
-const Components  = [CardComponent, ButtonComponent];
+import { ToasterComponent } from './components/toaster/toaster.component';
+const Components  = [CardComponent, ButtonComponent, ToasterComponent];
 
 @NgModule({
   declarations: [...Components],

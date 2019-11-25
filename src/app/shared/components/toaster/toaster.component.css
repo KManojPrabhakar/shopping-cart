@@ -1,0 +1,37 @@
+
+.toaster {
+  padding: 1.2rem 2.15rem 1.7rem 2.25rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0;
+  text-align: center;
+  margin: auto;
+  color: white;
+  max-width: 80%;
+  width: max-content;
+  word-break: break-word;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99999999999999;
+  top: 7rem;
+}
+.toaster__success {
+  background-color: green;
+}
+
+.toaster__warning {
+  background-color: orange;
+}
+
+.toaster__error {
+  background-color: crimson;
+}
+
+.toaster__info {
+  background-color: blue;
+}

@@ -1,3 +1,5 @@
 
 <app-header></app-header>
+<app-toaster *ngIf="showToasterMessage" [type]="toasterValues.type" [message]="toasterValues.message">
+</app-toaster>
 <router-outlet></router-outlet>

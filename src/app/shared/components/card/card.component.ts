@@ -26,7 +26,7 @@ export class CardComponent implements OnInit {
     this.emitButtonAction.emit(data);
   }
   handleUpdateCartItem(data) {
-    data.selectedQuantity = this.selectedQuantity;
+    data.selectedQuantity = Number(this.selectedQuantity);
     this.emitUpdateCartItem.emit(data);
   }
   numberOnly(event) {

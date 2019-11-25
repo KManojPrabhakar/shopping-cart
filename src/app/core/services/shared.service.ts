@@ -99,7 +99,7 @@ export class SharedService {
 
 
     } else {
-      // this.shoppingItems[findIndex].selectedQuantity = this.shoppingItems[findIndex].quantity;
+      this.shoppingItems[findIndex].selectedQuantity = this.shoppingItems[findIndex].quantity;
       const message = 'Please select cart items less than or equal to available quantity';
       this.showToaster(ToasterType.ERROR, message);
 
